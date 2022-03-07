@@ -87,6 +87,17 @@ a:hover {
 	}
 }
 
+@keyframes result {
+	0% {
+		opacity: 0;
+		transform: translate(0%, 30%);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0%, 0%);
+	}
+}
+
 .page {
 	overflow: hidden;
 	background: linear-gradient(to right, #7F00FF, #E100FF, #F2994A, #FD746C ,#FF9068, #23a6d5);
@@ -211,6 +222,7 @@ a:hover {
 	width: 100%;
 	justify-content: space-between;
 	margin-top: 55px;
+	animation: result 1s;
 }
 
 .form__result {

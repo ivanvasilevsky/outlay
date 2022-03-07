@@ -19,10 +19,10 @@ if ($home && $man && $woman != 0) {
 	$salary = $man + $woman;
 
 	$man_percent = round($man * 100 / $salary);
-	$woman_percent = round($woman * 100 / $salary);
-
 	$man_coin = round($home * $man_percent / 100);
-	$woman_coin = round($home * $woman_percent / 100);
+
+	$woman_percent = 100 - $man_percent;
+	$woman_coin = $home - $man_coin;
 }
 
 ?>
